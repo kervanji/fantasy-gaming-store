@@ -1,9 +1,10 @@
 CACHE MANIFEST
-# rev 20260924-fantasy-gaming-store
+# rev 20260924-fantasy-store-logo
 
 index.html 
 cache.html
 jb.html 
+assets/fantasy-store-logo.jpg
 jb.js
 core.js 
 mem.js 

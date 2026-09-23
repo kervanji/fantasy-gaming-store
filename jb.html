@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>MANSOOR0X // NVS</title>
+    <title>Fantasy Gaming Store // NVS</title>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=JetBrains+Mono:wght@400;700&display=swap');
 
@@ -80,7 +80,8 @@
 
       #brand {
         font-weight: 900;
-        font-size: 24px;
+        font-size: clamp(18px, 5vw, 24px);
+        text-align: center;
         letter-spacing: 0.05em;
         text-transform: uppercase;
         margin-bottom: 40px;
@@ -223,18 +224,40 @@
 
       #footer {
         position: fixed;
-        bottom: 20px;
+        bottom: 12px;
         font-family: 'JetBrains Mono', monospace;
         font-size: 10px;
         color: rgba(255, 255, 255, 0.2);
         letter-spacing: 0.2em;
+      }
+
+      #store-contact {
+        position: fixed;
+        bottom: 42px;
+        left: 16px;
+        right: 16px;
+        text-align: center;
+        font-size: 13px;
+        line-height: 1.8;
+        color: var(--color-text);
+      }
+      #store-contact a { color: #70b8ff; text-decoration: none; }
+      #store-contact a:focus-visible,
+      #store-contact a:hover { text-decoration: underline; }
+      body.log #store-contact { display: none; }
+
+      @media (max-height: 680px) {
+        #main-container {
+          width: min(60vh, 90vw);
+          transform: translateY(-30px);
+        }
       }
     </style>
   </head>
   <body>
 
     <div id="main-container">
-        <div id="brand">MANSOOR0X</div>
+        <div id="brand">FANTASY GAMING STORE</div>
         <div id="visual-indicator">
             <div id="spin"></div>
             <div class="pulse"></div>
@@ -249,7 +272,12 @@
       <div id="out"></div>
     </div>
 
-    <div id="footer">MANSOOR0X // NVS_CORE</div>
+    <div id="store-contact" dir="rtl">
+      <div>العنوان: كركوك، شارع الجمهورية، عمارة فريا</div>
+      <div>الهاتف: <a href="tel:07869992573" dir="ltr">07869992573</a></div>
+      <div>إنستغرام: <a href="https://www.instagram.com/fantasy.gstore/" target="_blank" rel="noopener noreferrer" dir="ltr">@fantasy.gstore</a></div>
+    </div>
+    <div id="footer">FANTASY GAMING STORE // NVS_CORE</div>
 
     <script type="module">
       import "./jb.js?v=10";
